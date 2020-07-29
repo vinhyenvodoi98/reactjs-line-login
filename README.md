@@ -15,12 +15,12 @@ npm install --save react-line-login
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-line-login'
+import LineLogin from 'react-line-login'
 import 'react-line-login/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <LineLogin clientID='' clientSecret='' state='' nonce='' />
   }
 }
 ```
