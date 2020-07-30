@@ -9,7 +9,14 @@ import jwt from 'jsonwebtoken'
 
 const maxAge = 120
 
-export const LineLogin = ({ clientID, clientSecret, state, nonce }) => {
+export const LineLogin = ({
+  clientID,
+  clientSecret,
+  state,
+  nonce,
+  setPayload,
+  setIdToken
+}) => {
   const lineLogin = () => {
     // Build query string.
     const query = querystring.stringify({
@@ -58,11 +65,7 @@ export const LineLogin = ({ clientID, clientSecret, state, nonce }) => {
           reqConfig
         )
         .then((res) => {
-          console.log('payload:')
-          console.log(res.data)
-
-          console.log('id token:')
-          console.log(res.data.id_token)
+          if (setPayload) setPayload(res.data)
 
           try {
             const decodedIdToken = jwt.verify(res.data.id_token, clientSecret, {
@@ -72,8 +75,7 @@ export const LineLogin = ({ clientID, clientSecret, state, nonce }) => {
               nonce: nonce
             })
 
-            console.log('decoded id token:')
-            console.log(decodedIdToken)
+            if (setIdToken) setIdToken(decodedIdToken)
           } catch (err) {
             // If token is invalid.
             console.log(err)

@@ -1,10 +1,10 @@
 {
-  "name": "react-line-login",
-  "version": "1.0.0",
+  "name": "reactjs-line-login",
+  "version": "1.2.0",
   "description": "Made with create-react-library",
   "author": "vinhyenvodoi98",
   "license": "MIT",
-  "repository": "vinhyenvodoi98/react-line-login",
+  "repository": "vinhyenvodoi98/reactjs-line-login",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",

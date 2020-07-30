@@ -1,13 +1,13 @@
-# react-line-login
+# reactjs-line-login
 
 > Made with create-react-library
 
-[![NPM](https://img.shields.io/npm/v/react-line-login.svg)](https://www.npmjs.com/package/react-line-login) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/reactjs-line-login.svg)](https://www.npmjs.com/package/reactjs-line-login) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-line-login
+npm install --save reactjs-line-login
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install --save react-line-login
 ```jsx
 import React, { Component } from 'react'
 
-import LineLogin from 'react-line-login'
-import 'react-line-login/dist/index.css'
+import LineLogin from 'reactjs-line-login'
+import 'reactjs-line-login/dist/index.css'
 
 class Example extends Component {
   render() {
