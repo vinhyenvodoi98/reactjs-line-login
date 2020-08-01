@@ -10,25 +10,34 @@
 npm install --save reactjs-line-login
 ```
 
+## Demo
+
+![](https://media.giphy.com/media/UV4u60zcGqpIocxn9u/giphy.gif)
+
 ## Usage
 
-```jsx
-import React, { useState } from 'react'
+Please read LINE login document to fill out the fields and setup.
 
-import { LineLogin } from 'reactjs-line-login'
-import 'reactjs-line-login/dist/index.css'
+https://developers.line.biz/en/docs/line-login/integrate-line-login/
+
+```jsx
+import React, { useState } from 'react';
+
+import { LineLogin } from 'reactjs-line-login';
+import 'reactjs-line-login/dist/index.css';
 
 const App = () => {
-  const [payload, setPayload] = useState(null)
-  const [idToken, setIdToken] = useState(null)
+  const [payload, setPayload] = useState(null);
+  const [idToken, setIdToken] = useState(null);
 
   /*
   Example:
-    clientID='1868550780'
-    clientSecret='5256dfegwca9674c3d15193155a1e3f76c'
-    state='b41c8fd15b895f0fc28bf3b9d7da89054d931e7s'
+    clientID='1854553430'
+    clientSecret='deee1bf0ae8deg658e214b67b25f6ec3'
+    state='b41c8fd15b895f0fc28bfwb9d7da89054d931e7s'
     nonce='d78a51235f6ee189e831q9c68523cfa336917ada'
-
+    redirectURI='http://localhost:3000/callback"
+    scope='profile openid email'
   recommend : save secret in .env
   */
 
@@ -39,14 +48,19 @@ const App = () => {
         clientSecret=''
         state=''
         nonce=''
+        redirectURI=''
+        scope=''
         setPayload={setPayload}
         setIdToken={setIdToken}
       />
-      {console.log('payload', payload)}
-      {console.log('idToken', idToken)}
+      {payload && idToken ? (
+        console.log('payload', payload, 'idToken', idToken)
+      ) : (
+        <></>
+      )}
     </div>
-  )
-}
+  );
+};
 ```
 
 ## License
