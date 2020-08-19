@@ -6,15 +6,12 @@
   margin: 1rem;
   width: 303px;
   height: 88px;
-  background: url('https://github.com/vinhyenvodoi98/reactjs-line-login/blob/master/static/image/line-login-button/btn_login_base.png')
-    no-repeat;
+  background: url('https://i.imgur.com/khY4T6I.png') no-repeat;
   display: inline-block;
 }
 .lineButton:hover {
-  background: url('https://github.com/vinhyenvodoi98/reactjs-line-login/blob/master/static/image/line-login-button/btn_login_hover.png')
-    no-repeat;
+  background: url('https://i.imgur.com/0pIIFzf.png') no-repeat;
 }
 .lineButton:active {
-  background: url('https://github.com/vinhyenvodoi98/reactjs-line-login/blob/master/static/image/line-login-button/btn_login_press.png')
-    no-repeat;
+  background: url('https://i.imgur.com/JTGuGpQ.png') no-repeat;
 }
