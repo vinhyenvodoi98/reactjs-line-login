@@ -6,15 +6,15 @@
   margin: 1rem;
   width: 303px;
   height: 88px;
-  background: url('../static/image/line-login-button/btn_login_base.png')
+  background: url('https://github.com/vinhyenvodoi98/reactjs-line-login/blob/master/static/image/line-login-button/btn_login_base.png')
     no-repeat;
   display: inline-block;
 }
 .lineButton:hover {
-  background: url('../static/image/line-login-button/btn_login_hover.png')
+  background: url('https://github.com/vinhyenvodoi98/reactjs-line-login/blob/master/static/image/line-login-button/btn_login_hover.png')
     no-repeat;
 }
 .lineButton:active {
-  background: url('../static/image/line-login-button/btn_login_press.png')
+  background: url('https://github.com/vinhyenvodoi98/reactjs-line-login/blob/master/static/image/line-login-button/btn_login_press.png')
     no-repeat;
 }
